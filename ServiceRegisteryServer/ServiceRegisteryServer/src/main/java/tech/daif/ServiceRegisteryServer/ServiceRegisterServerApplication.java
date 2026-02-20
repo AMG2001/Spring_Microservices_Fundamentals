@@ -2,12 +2,14 @@ package tech.daif.ServiceRegisteryServer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class ServiceRegisteryServerApplication {
+@EnableEurekaServer
+public class ServiceRegisterServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceRegisteryServerApplication.class, args);
+		SpringApplication.run(ServiceRegisterServerApplication.class, args);
 	}
 
 }
