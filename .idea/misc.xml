@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/CouponService/CouponService/pom.xml" />
         <option value="$PROJECT_DIR$/ProductsService/ProductsService/pom.xml" />
         <option value="$PROJECT_DIR$/ServiceRegisteryServer/ServiceRegisteryServer/pom.xml" />
+        <option value="$PROJECT_DIR$/Gateway/pom.xml" />
       </list>
     </option>
   </component>

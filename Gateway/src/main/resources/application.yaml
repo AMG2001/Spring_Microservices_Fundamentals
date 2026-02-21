@@ -1,0 +1,29 @@
+server:
+  port: 9095
+
+spring:
+  application:
+    name: Gateway
+
+#    gateway configuration.
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: product-service-route
+              uri: lb://PRODUCTSSERVICE
+              predicates:
+                - Path=/product, /product/**
+
+            - id: coupon-service-route
+              uri: lb://COUPONSERVICE
+              predicates:
+                - Path=/coupon, /coupon/**
+#Eureka client configuration.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # the url of the service registry server.
+  instance:
+    hostname: localhost

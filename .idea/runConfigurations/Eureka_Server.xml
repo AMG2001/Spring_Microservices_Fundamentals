@@ -1,6 +1,5 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Eureka-Server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
     <module name="ServiceRegisteryServer" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="tech.daif.ServiceRegisteryServer.ServiceRegisterServerApplication" />
     <extension name="coverage">
