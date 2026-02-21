@@ -9,3 +9,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/ # the url of the service registry server.
+  instance:
+    hostname: localhost
