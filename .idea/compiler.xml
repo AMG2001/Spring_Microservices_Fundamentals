@@ -9,8 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ServiceRegisteryServer" />
         <module name="Gateway" />
+        <module name="ConfigServer" />
       </profile>
-      <profile name="Annotation profile for ProductsService" enabled="true">
+      <profile name="Annotation profile for CouponService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -24,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConfigServer" options="-parameters" />
       <module name="CouponService" options="-parameters" />
       <module name="Gateway" options="-parameters" />
       <module name="ProductsService" options="-parameters" />

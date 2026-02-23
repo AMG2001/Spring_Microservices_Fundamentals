@@ -1,13 +1,6 @@
 spring:
   application:
-    name: CouponService # very important as it is the id of the service.
+    name: coupon
 
-server:
-  port: 8081   # Each service must have unique port
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/ # the url of the service registry server.
-  instance:
-    hostname: localhost
+  config:
+    import: "optional:configserver:http://localhost:8888"

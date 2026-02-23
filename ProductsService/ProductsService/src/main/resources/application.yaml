@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ProductsService
+    name: product-service
 
 server:
   port: 8090   # Each service must have unique port
@@ -11,3 +11,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/ # the url of the service registry server.
   instance:
     hostname: localhost
+
+# resilience4j retries configuration
+resilience4j:
+  retry:
+    instances:
+      getProductRetry:
+        maxAttempts: 3              # Total 3 attempts (1 initial + 2 retries)
+        waitDuration: 1s            # Wait 1 second between retries

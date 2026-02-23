@@ -3,8 +3,10 @@ server:
 
 spring:
   application:
-    name: Gateway
-
+    name: gateway
+    # URL of config server for fetching the configuration
+  config:
+    import: "optional:configserver:http://localhost:8071" # URL of your Config Server
 #    gateway configuration.
   cloud:
     gateway:
